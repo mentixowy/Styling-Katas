@@ -1,0 +1,70 @@
+/* Headers */
+h1 {
+    font-size: 56px;
+    font-weight: $regular-weight;
+    color: $color-white;
+    line-height: 58px;
+    letter-spacing: -3.36px;
+
+    span {
+        color: $color-pure-white;
+        font-weight: $semibold-weight;
+    }
+}
+
+h2 {
+    font-size: $m-xl;
+    font-weight: $medium-weight;
+    color: $color-black;
+    line-height: 52px;
+    letter-spacing: -2.88px;
+
+    span {
+        color: $color-secondary;
+        opacity: 0.8;
+    }
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: $medium-weight;
+    color: $color-black;
+    line-height: $m-lg;
+    letter-spacing: -1.04px;
+}
+
+/* Paragraphs */
+.bodyLarge {
+    font-size: 18px;
+    font-weight: $regular-weight;
+    line-height: $m-base;
+    letter-spacing: -0.36px;
+}
+
+.bodyBase {
+    font-size: $sm;
+    font-weight: $regular-weight;
+    line-height: $m-base;
+    letter-spacing: -0.32px;
+}
+
+.bodySmall {
+    font-size: 14px;
+    font-weight: $regular-weight;
+    line-height: $m-base;
+    letter-spacing: -0.28px;
+
+}
+
+.bodySmall {}
+
+/* Kickers */
+.kicker {
+    font-size: 14px;
+    font-weight: $medium-weight;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    line-height: $m-base;
+    color: $color-black;
+    opacity: 0.8;
+}

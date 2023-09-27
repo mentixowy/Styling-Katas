@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 $font-main: 'Inter', sans-serif;
 
+/* Font Weights */
+$regular-weight: 400;
+$medium-weight: 500;
+$semibold-weight: 600;
 
 /* Brand Colors */
 $color-primary: #B31C0F;
@@ -12,3 +16,15 @@ $color-black: #121212;
 $color-pure-white: #ffffff;
 $color-white: #EBEBEB;
 $color-grey: #F4F4F4;
+
+/* Margins 8px grid */
+$m-xxxs: 2px;
+$m-xxs: 4px;
+$m-xs: 8px;
+$m-x: 12px;
+$m-sm: 16px;
+$m-base: 24px;
+$m-lg: 32px;
+$m-xl: 48px;
+$m-xxl: 80px;
+$m-xxxl: 120px;
