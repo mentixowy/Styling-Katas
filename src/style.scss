@@ -1,5 +1,11 @@
+@import 'reset';
+@import 'header';
+@import 'variables';
+
 * {
   box-sizing: border-box;
 }
 
-@import 'header';
+body {
+  background-color: green
+}

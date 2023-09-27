@@ -6,14 +6,14 @@ export default function App() {
     <main>
       <header className="header">
         <nav>
-          <ul>
+          <ol>
             <li>1</li>
             <li>2</li>
             <li>3</li>
             <li>3</li>
             <li>3</li>
             <li>3</li>
-          </ul>
+          </ol>
         </nav>
       </header>
     </main>
