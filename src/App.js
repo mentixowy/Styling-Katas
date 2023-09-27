@@ -1,11 +1,18 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <main>
+      <header className="header">
+        <nav>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </nav>
+      </header>
+    </main>
   );
 }
