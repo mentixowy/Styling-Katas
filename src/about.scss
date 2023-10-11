@@ -1,0 +1,30 @@
+.aboutSection {
+    padding: 120px 340px $m-xxl;
+    margin: auto;
+
+    .aboutTextContent {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $m-xxl;
+    }
+
+    .aboutSectionHeader {
+        flex: 0 0 460px;
+
+        .kicker {
+            margin-bottom: $m-x;
+        }
+    }
+
+    .bodyBase {
+        color: $color-black;
+        opacity: 0.8;
+        width: 720px;
+
+    }
+
+    iframe {
+        border-radius: $m-xs;
+    }
+
+}

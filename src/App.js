@@ -7,10 +7,10 @@ export default function App() {
       <div className="aboutTextContent">
         <div className="aboutSectionHeader">
           <div className="kicker">About us</div>
-          <h2>
+          <div className="h2" h2>
             <span>Who are we and how </span>
             can we help you?
-          </h2>
+          </div>
         </div>
         <p className="bodyBase">
           American Funding Innovators was founded in April, 2009, but our experience with grant

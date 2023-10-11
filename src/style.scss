@@ -2,6 +2,8 @@
 @import 'header';
 @import 'variables';
 @import 'typo';
+@import 'about';
+@import 'mixins';
 
 * {
   box-sizing: border-box;
@@ -10,36 +12,4 @@
 body {
   font-family: $font-main;
   background-color: $color-pure-white;
-}
-
-.aboutSection {
-  padding: 120px 340px $m-xxl;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  row-gap: $m-xxl;
-
-  .aboutSectionHeader {
-    width: 460px;
-
-    .kicker {
-      margin-bottom: $m-x;
-    }
-  }
-
-  .aboutTextContent {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  p {
-    color: $color-black;
-    opacity: 0.8;
-    width: 720px;
-
-  }
-
-  iframe {
-    border-radius: $m-xs;
-  }
 }

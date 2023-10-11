@@ -28,3 +28,9 @@ $m-lg: 32px;
 $m-xl: 48px;
 $m-xxl: 80px;
 $m-xxxl: 120px;
+
+/* Breakpoints */
+$breakpoints: (
+    'small': 767px,
+    'medium': 992px,
+    'large': 1200px) !default;
