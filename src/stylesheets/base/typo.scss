@@ -13,7 +13,16 @@
 }
 
 @mixin h2() {
-  font-size: $m-xl;
+  @include respond-to("small") {
+    font-size: $m-xs;
+  }
+  @include respond-to("medium") {
+    font-size: $m-base;
+  }
+  @include respond-to("large") {
+    font-size: $m-xl;
+  }
+
   font-weight: $medium-weight;
   color: $color-black;
   line-height: 52px;
@@ -24,7 +33,6 @@
     opacity: 0.8;
   }
 }
-
 .h3 {
   font-size: 26px;
   font-weight: $medium-weight;

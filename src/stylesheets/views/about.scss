@@ -1,6 +1,10 @@
 @import "../base/typo.scss";
 
 .about-section {
+  &__header {
+    @include h2;
+    flex: 0 0 460px;
+  }
   @include respond-to("small") {
     background-color: red;
   }
@@ -18,11 +22,6 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: $m-xxl;
-    }
-
-    &__header {
-      @include h2;
-      flex: 0 0 460px;
     }
 
     &__kicker {
