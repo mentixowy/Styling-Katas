@@ -1,0 +1,15 @@
+@import "./variables.scss";
+@import "../vendor/reset.scss";
+@import "../mixins/breakpoints.scss";
+
+@import "../views/about.scss";
+@import "./typo.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $color-pure-white;
+}

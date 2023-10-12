@@ -1,0 +1,42 @@
+@import "../base/typo.scss";
+
+.about-section {
+  @include respond-to("small") {
+    background-color: red;
+  }
+
+  @include respond-to("medium") {
+    background-color: blue;
+  }
+
+  @include respond-to("large") {
+    background-color: white;
+    padding: 120px 340px $m-xxl;
+    margin: auto;
+
+    &__text-content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: $m-xxl;
+    }
+
+    &__header {
+      @include h2;
+      flex: 0 0 460px;
+    }
+
+    &__kicker {
+      @include kicker;
+    }
+
+    &__body-base {
+      color: $color-black;
+      opacity: 0.8;
+      width: 720px;
+    }
+
+    &__iframe {
+      border-radius: $m-xs;
+    }
+  }
+}

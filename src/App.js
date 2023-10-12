@@ -1,27 +1,8 @@
 import React from 'react';
-import './style.scss';
+import { AboutUs } from './AbousUs';
 
 export default function App() {
   return (
-    <div className="aboutSection">
-      <div className="aboutTextContent">
-        <div className="aboutSectionHeader">
-          <div className="kicker">About us</div>
-          <div className="h2" h2>
-            <span>Who are we and how </span>
-            can we help you?
-          </div>
-        </div>
-        <p className="bodyBase">
-          American Funding Innovators was founded in April, 2009, but our experience with grant
-          software dates back over 15 years to when our founders worked on the first online grant search
-          database, and 2006 when we designed & launched the first online grant management system
-          on the market. Since those early days, we’ve moved on to form AFI and have worked hand in
-          hand with our clients to continuously improve the user experience and functionality of
-          GrantNavigator, ensuring it is YOUR SYSTEM designed to meet YOUR NEEDS.
-        </p>
-      </div>
-      <iframe width="100%" height="640px" src="https://www.youtube.com/embed/xb3fPWDix3E?si=E8zz10Nyh_TFdUwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <AboutUs />
   );
 }
