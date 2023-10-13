@@ -5,7 +5,7 @@ export const AboutUs = () => {
         <div className="about-section__header">
           <div className="about-section__kicker">About us</div>
           <h2 className="about-section__h2">
-            <span>Who are we and how </span>
+            Who are we and how <br />
             can we help you?
           </h2>
         </div>

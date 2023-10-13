@@ -2,14 +2,14 @@
 @import "../vendor/reset.scss";
 @import "../mixins/breakpoints.scss";
 
-@import "../views/about.scss";
 @import "./typo.scss";
+@import "../views/about.scss";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $font-main;
-    background-color: $color-pure-white;
+  font-family: $font-main;
+  background-color: $color-pure-white;
 }

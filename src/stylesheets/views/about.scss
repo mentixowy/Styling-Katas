@@ -1,20 +1,34 @@
-@import "../base/typo.scss";
-
 .about-section {
-  &__header {
-    @include h2;
-    flex: 0 0 460px;
+  &__kicker {
+    @include kicker;
   }
+  &__h2 {
+    @include h2;
+  }
+
   @include respond-to("small") {
-    background-color: red;
+    background-color: $color-pure-white;
+    padding: 120px 0 $m-xxl;
+    margin: auto;
+
+    &__text-content {
+      margin: $m-xxl $m-base $m-xl;
+    }
+
+    &__body-base {
+      color: $color-black;
+      opacity: 0.8;
+    }
   }
 
   @include respond-to("medium") {
-    background-color: blue;
+    background-color: $color-pure-white;
+    padding: 120px 340px $m-xxl;
+    margin: auto;
   }
 
   @include respond-to("large") {
-    background-color: white;
+    background-color: $color-pure-white;
     padding: 120px 340px $m-xxl;
     margin: auto;
 
@@ -24,13 +38,7 @@
       margin-bottom: $m-xxl;
     }
 
-    &__kicker {
-      @include kicker;
-    }
-
     &__body-base {
-      color: $color-black;
-      opacity: 0.8;
       width: 720px;
     }
 

@@ -1,21 +1,22 @@
 /* Brand Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-$font-main: 'Inter', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+$font-main: "Inter", sans-serif;
 
 /* Font Weights */
+// Change naming for those
 $regular-weight: 400;
 $medium-weight: 500;
 $semibold-weight: 600;
 
 /* Brand Colors */
-$color-primary: #B31C0F;
-$color-secondary: #1E2019;
+$color-primary: #b31c0f;
+$color-secondary: #1e2019;
 
 /* Neutral Colors */
 $color-black: #121212;
 $color-pure-white: #ffffff;
-$color-white: #EBEBEB;
-$color-grey: #F4F4F4;
+$color-white: #ebebeb;
+$color-grey: #f4f4f4;
 
 /* Margins 8px grid */
 $m-xxxs: 2px;
@@ -31,6 +32,7 @@ $m-xxxl: 120px;
 
 /* Breakpoints */
 $breakpoints: (
-    'small': 767px,
-    'medium': 992px,
-    'large': 1200px) !default;
+  "small": 767px,
+  "medium": 992px,
+  "large": 1200px,
+) !default;

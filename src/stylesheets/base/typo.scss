@@ -28,9 +28,8 @@
   line-height: 52px;
   letter-spacing: -2.88px;
 
-  span {
-    color: $color-secondary;
-    opacity: 0.8;
+  &::first-line {
+    color: rgba($color-secondary, 0.6);
   }
 }
 .h3 {
