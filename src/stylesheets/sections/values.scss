@@ -1,0 +1,127 @@
+.values-section {
+  @include respond-to("small") {
+    background-color: $color-grey;
+    padding: $m-xl 0 $m-xxl;
+    margin: auto;
+
+    &__kicker {
+      @include kicker;
+      margin-bottom: $m-x;
+    }
+
+    &__h2 {
+      @include h2;
+      margin-bottom: $m-lg;
+
+      &::first-line {
+        color: $color-black;
+      }
+    }
+
+    &__text-content {
+      margin: 0 $m-base $m-xl;
+    }
+
+    &__cards-wrapper {
+      margin: 0 $m-base;
+
+      &__card {
+        width: 100%;
+        margin-bottom: $m-lg;
+
+        &__counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          width: $m-xl;
+          height: $m-xl;
+          border-radius: 100%;
+          margin-bottom: $m-x;
+          background-color: $color-primary;
+          color: $color-pure-white;
+          font-size: $m-sm;
+          font-weight: $weight-semibold;
+          line-height: $m-base;
+          letter-spacing: -0.64px;
+        }
+        &__h3 {
+          @include h3;
+          opacity: 0.8;
+          margin-bottom: $m-x;
+        }
+        &__body-small {
+          @include bodySmall;
+          color: $color-secondary;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  @include respond-to("medium") {
+    &__text-content {
+      margin: 0 $m-slg $m-xl;
+    }
+
+    &__cards-wrapper {
+      margin: 0 $m-slg;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__card {
+        max-width: 45%;
+        margin-bottom: $m-slg;
+
+        &__counter {
+          width: 56px;
+          height: 56px;
+        }
+        &__h3 {
+          @include h3;
+          opacity: 0.8;
+          margin-bottom: $m-x;
+        }
+        &__body-small {
+          @include bodySmall;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+  @include respond-to("large") {
+    &__text-content {
+      margin: $m-xxl 340px $m-xl;
+    }
+    &__h2 {
+      margin-bottom: $m-xxl;
+    }
+
+    &__cards-wrapper {
+      margin: 0 340px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__card {
+        max-width: 22%;
+        margin-bottom: $m-slg;
+
+        &__counter {
+          width: 56px;
+          height: 56px;
+          margin-bottom: $m-base;
+        }
+        &__h3 {
+          @include h3;
+          opacity: 0.8;
+          margin-bottom: $m-base;
+        }
+        &__body-small {
+          @include bodySmall;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}

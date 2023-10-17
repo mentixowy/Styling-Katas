@@ -1,7 +1,7 @@
 .about-section {
   @include respond-to("small") {
     background-color: $color-pure-white;
-    padding: 120px 0 $m-xxl;
+    padding: 120px 0 0;
     margin: auto;
 
     &__kicker {
@@ -32,19 +32,17 @@
   }
 
   @include respond-to("medium") {
-    padding: 120px 0 $m-xxl;
-
     &__text-content {
       margin: $m-xxl $m-slg $m-xl;
     }
 
     &__iframe {
-      height: 420px;
+      height: 480px;
     }
   }
 
   @include respond-to("large") {
-    padding: 120px 340px $m-xxl;
+    padding: 120px 340px 0;
 
     &__text-content {
       display: flex;

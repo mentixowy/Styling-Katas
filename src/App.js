@@ -1,8 +1,18 @@
-import React from 'react';
-import { AboutUs } from './AbousUs';
+import React from "react";
+import { AboutUs } from "./AbousUs";
+import { OurValues } from "./OurValues";
 
-export default function App() {
+// export default function App() {
+//   return <AboutUs />;
+//   return <OurValues />;
+// }
+function App() {
   return (
-    <AboutUs />
+    <div className="App">
+      <AboutUs />
+      <OurValues />
+    </div>
   );
 }
+
+export default App;

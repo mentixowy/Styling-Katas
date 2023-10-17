@@ -3,7 +3,8 @@
 @import "../mixins/breakpoints.scss";
 
 @import "./typo.scss";
-@import "../views/about.scss";
+@import "../sections/about.scss";
+@import "../sections/values.scss";
 
 * {
   box-sizing: border-box;

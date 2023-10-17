@@ -36,12 +36,19 @@
     letter-spacing: -2.88px;
   }
 }
-.h3 {
-  font-size: 26px;
+@mixin h3() {
   font-weight: $weight-medium;
-  color: $color-black;
-  line-height: $m-lg;
-  letter-spacing: -1.04px;
+  color: $color-secondary;
+  @include respond-to("small") {
+    font-size: $m-base;
+    letter-spacing: -0.96px;
+    line-height: 38px;
+  }
+  @include respond-to("medium") {
+    font-size: $m-lg;
+    letter-spacing: -1.28px;
+    line-height: $m-slg;
+  }
 }
 
 /* Paragraphs */
@@ -59,7 +66,7 @@
   letter-spacing: -0.32px;
 }
 
-.bodySmall {
+@mixin bodySmall() {
   font-size: 14px;
   font-weight: $weight-regular;
   line-height: $m-base;
