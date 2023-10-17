@@ -3,10 +3,9 @@
 $font-main: "Inter", sans-serif;
 
 /* Font Weights */
-// Change naming for those
-$regular-weight: 400;
-$medium-weight: 500;
-$semibold-weight: 600;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
 
 /* Brand Colors */
 $color-primary: #b31c0f;
@@ -23,16 +22,18 @@ $m-xxxs: 2px;
 $m-xxs: 4px;
 $m-xs: 8px;
 $m-x: 12px;
+$m-t: 14px;
 $m-sm: 16px;
 $m-base: 24px;
 $m-lg: 32px;
+$m-slg: 40px;
 $m-xl: 48px;
 $m-xxl: 80px;
 $m-xxxl: 120px;
 
 /* Breakpoints */
 $breakpoints: (
-  "small": 767px,
-  "medium": 992px,
-  "large": 1200px,
+  "small": 320px,
+  "medium": 768px,
+  "large": 1440px,
 ) !default;

@@ -22,8 +22,6 @@ export const AboutUs = () => {
       </div>
       <iframe
         className="about-section__iframe"
-        width="100%"
-        height="640px"
         src="https://www.youtube.com/embed/xb3fPWDix3E?si=E8zz10Nyh_TFdUwg"
         title="YouTube video player"
         frameborder="0"
