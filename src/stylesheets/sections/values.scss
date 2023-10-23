@@ -1,60 +1,53 @@
 .values-section {
-  @include respond-to("small") {
-    background-color: $color-grey;
-    padding: $m-xl 0 $m-xxl;
-    margin: auto;
+  background-color: $color-grey;
+  padding: $m-xl 0 $m-xxl;
+  margin: auto;
 
-    &__kicker {
-      @include kicker;
-      margin-bottom: $m-x;
-    }
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+  }
 
-    &__h2 {
-      @include h2;
+  &__h2 {
+    @include h2(one-line);
+    margin-bottom: $m-lg;
+  }
+
+  &__text-content {
+    margin: 0 $m-base $m-xl;
+  }
+
+  &__cards-wrapper {
+    margin: 0 $m-base;
+
+    &__card {
+      width: 100%;
       margin-bottom: $m-lg;
 
-      &::first-line {
-        color: $color-black;
+      &__counter {
+        align-items: center;
+        background-color: $color-primary;
+        border-radius: 50%;
+        color: $color-pure-white;
+        display: flex;
+        font-size: $m-sm;
+        font-weight: $weight-semibold;
+        height: $m-xl;
+        justify-content: center;
+        letter-spacing: -0.64px;
+        line-height: $m-base;
+        margin-bottom: $m-sm;
+        width: $m-xl;
       }
-    }
-
-    &__text-content {
-      margin: 0 $m-base $m-xl;
-    }
-
-    &__cards-wrapper {
-      margin: 0 $m-base;
-
-      &__card {
-        width: 100%;
-        margin-bottom: $m-lg;
-
-        &__counter {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          justify-items: center;
-          width: $m-xl;
-          height: $m-xl;
-          border-radius: 100%;
-          margin-bottom: $m-x;
-          background-color: $color-primary;
-          color: $color-pure-white;
-          font-size: $m-sm;
-          font-weight: $weight-semibold;
-          line-height: $m-base;
-          letter-spacing: -0.64px;
-        }
-        &__h3 {
-          @include h3;
-          opacity: 0.8;
-          margin-bottom: $m-x;
-        }
-        &__body-small {
-          @include bodySmall;
-          color: $color-secondary;
-          opacity: 0.6;
-        }
+      &__h3 {
+        @include h3;
+        opacity: 0.8;
+        margin-bottom: $m-sm;
+      }
+      &__body-small {
+        @include body-small;
+        color: $color-secondary;
+        opacity: 0.6;
       }
     }
   }
@@ -77,15 +70,6 @@
           width: 56px;
           height: 56px;
         }
-        &__h3 {
-          @include h3;
-          opacity: 0.8;
-          margin-bottom: $m-x;
-        }
-        &__body-small {
-          @include bodySmall;
-          opacity: 0.6;
-        }
       }
     }
   }
@@ -99,27 +83,18 @@
 
     &__cards-wrapper {
       margin: 0 340px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: $m-slg;
 
       &__card {
-        max-width: 22%;
         margin-bottom: $m-slg;
+        max-width: 320px;
 
         &__counter {
-          width: 56px;
-          height: 56px;
           margin-bottom: $m-base;
         }
         &__h3 {
-          @include h3;
-          opacity: 0.8;
           margin-bottom: $m-base;
-        }
-        &__body-small {
-          @include bodySmall;
-          opacity: 0.6;
         }
       }
     }

@@ -1,6 +1,6 @@
 /* Headers */
 .h1 {
-  font-size: 56px;
+  font-size: $f-huge;
   font-weight: $weight-regular;
   color: $color-white;
   line-height: 58px;
@@ -12,62 +12,60 @@
   }
 }
 
-@mixin h2() {
+@mixin h2($one-line: false) {
+  font-size: $f-xl;
+  letter-spacing: -1.92px;
+  line-height: $m-slg;
   color: $color-black;
   font-weight: $weight-medium;
-  line-height: $m-lg;
 
-  &::first-line {
-    color: rgba($color-secondary, 0.6);
+  @if $one-line == false {
+    &::first-line {
+      color: rgba($color-secondary, 0.6);
+    }
   }
 
-  @include respond-to("small") {
-    font-size: $m-lg;
-    letter-spacing: -1.92px;
-    line-height: $m-lg;
-  }
   @include respond-to("medium") {
-    font-size: $m-slg;
-    line-height: $m-slg;
+    font-size: $f-xxl;
+    line-height: $m-xl;
   }
   @include respond-to("large") {
-    font-size: $m-xl;
-    line-height: $m-xl;
+    font-size: $f-xxxl;
+    line-height: $m-xlr;
     letter-spacing: -2.88px;
   }
 }
 @mixin h3() {
   font-weight: $weight-medium;
   color: $color-secondary;
-  @include respond-to("small") {
-    font-size: $m-base;
-    letter-spacing: -0.96px;
-    line-height: 38px;
-  }
+  font-size: $f-slg;
+  letter-spacing: -0.96px;
+  line-height: 38px;
+
   @include respond-to("medium") {
-    font-size: $m-lg;
+    font-size: $f-slg;
     letter-spacing: -1.28px;
     line-height: $m-slg;
   }
 }
 
 /* Paragraphs */
-.bodyLarge {
-  font-size: 18px;
+.body-large {
+  font-size: $f-lg;
   font-weight: $weight-regular;
   line-height: $m-base;
   letter-spacing: -0.36px;
 }
 
-@mixin bodyBase() {
-  font-size: $m-sm;
+@mixin body-base() {
+  font-size: $f-base;
   font-weight: $weight-regular;
   line-height: $m-base;
   letter-spacing: -0.32px;
 }
 
-@mixin bodySmall() {
-  font-size: 14px;
+@mixin body-small() {
+  font-size: $f-sm;
   font-weight: $weight-regular;
   line-height: $m-base;
   letter-spacing: -0.28px;
@@ -75,22 +73,20 @@
 
 /* Kickers */
 @mixin kicker() {
+  font-size: $f-xs;
+  letter-spacing: 0.72px;
   font-weight: $weight-medium;
   text-transform: uppercase;
   line-height: $m-base;
   color: $color-black;
   opacity: 0.8;
 
-  @include respond-to("small") {
-    font-size: $m-x;
-    letter-spacing: 0.72px;
-  }
   @include respond-to("medium") {
-    font-size: $m-t;
+    font-size: $f-sm;
     letter-spacing: 0.72px;
   }
   @include respond-to("large") {
-    font-size: $m-sm;
+    font-size: $f-base;
     letter-spacing: 0.84px;
   }
 }
