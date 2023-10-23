@@ -74,8 +74,15 @@
     }
   }
   @include respond-to("large") {
+    // This negative margin-top on large is only for hiding colorful padding under iframe object
+    // It's not a magic number, it's half iframe height value (640px)
+    margin-top: -320px;
+
     &__text-content {
-      margin: $m-xxl 340px $m-xl;
+      // Margin-top is 80(according to design), so it's should be $m-xxl, but to balance negative
+      // margin value (witch is -320px) I need to add this and set to 400px.
+      // This effect exists only on large viewports and It's only for visual appearance purposes
+      margin: 400px 340px $m-xl;
     }
     &__h2 {
       margin-bottom: $m-xxl;
