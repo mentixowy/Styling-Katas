@@ -1,14 +1,18 @@
 /* Headers */
-.h1 {
-  font-size: $f-huge;
+@mixin h1() {
+  font-size: $f-xlr;
   font-weight: $weight-regular;
   color: $color-white;
-  line-height: 58px;
-  letter-spacing: -3.36px;
+  line-height: $m-xl;
+  letter-spacing: -1.92px;
 
   span {
     color: $color-pure-white;
     font-weight: $weight-semibold;
+  }
+  @include respond-to("medium") {
+    font-size: $f-xxl;
+    line-height: $m-xl;
   }
 }
 
@@ -50,11 +54,16 @@
 }
 
 /* Paragraphs */
-.body-large {
-  font-size: $f-lg;
+@mixin body-large {
+  font-size: $f-sm;
   font-weight: $weight-regular;
   line-height: $m-base;
-  letter-spacing: -0.36px;
+  letter-spacing: -0.28px;
+
+  @include respond-to("medium") {
+    font-size: $f-base;
+    line-height: $m-lg;
+  }
 }
 
 @mixin body-base() {

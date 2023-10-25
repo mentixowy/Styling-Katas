@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "../vendor/reset.scss";
 @import "../mixins/breakpoints.scss";
+@import "../components/button.scss";
 
 @import "./typo.scss";
 @import "../sections/hero.scss";
@@ -13,5 +14,5 @@
 
 body {
   font-family: $font-main;
-  background-color: $color-pure-white;
+  background-color: $color-black;
 }

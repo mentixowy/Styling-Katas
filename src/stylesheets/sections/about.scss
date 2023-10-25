@@ -1,6 +1,6 @@
 .about-section {
   background-color: $color-pure-white;
-  padding: 120px 0 0;
+  padding: $m-xxl 0 0;
   margin: auto;
 
   &__kicker {
@@ -17,7 +17,7 @@
   }
 
   &__text-content {
-    margin: $m-xxl $m-base $m-xl;
+    margin: 0 $m-base $m-xl;
   }
 
   &__body-base {

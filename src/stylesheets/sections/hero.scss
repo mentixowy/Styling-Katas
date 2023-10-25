@@ -1,0 +1,32 @@
+.hero-section {
+  background-image: url("../../assets/images/hero_image.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 33%;
+  padding: $m-base;
+
+  &__text-content {
+    margin: $m-xxl 0;
+  }
+
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+    color: $color-white;
+  }
+
+  &__h1 {
+    @include h1;
+    margin-bottom: $m-lg;
+  }
+  &__body-large {
+    @include body-large;
+    color: $color-white;
+    margin-bottom: $m-lg;
+  }
+  &__CTA {
+    display: flex;
+    flex-direction: column;
+    gap: $m-sm;
+  }
+}
