@@ -1,6 +1,6 @@
 export const AboutUs = () => {
   return (
-    <div className="about-section">
+    <section className="about-section">
       <div className="about-section__text-content">
         <div className="about-section__header">
           <div className="about-section__kicker">About us</div>
@@ -28,6 +28,6 @@ export const AboutUs = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-    </div>
+    </section>
   );
 };

@@ -19,36 +19,36 @@
 
   &__cards-wrapper {
     margin: 0 $m-base;
+  }
 
-    &__card {
-      width: 100%;
-      margin-bottom: $m-lg;
+  .card {
+    width: 100%;
+    margin-bottom: $m-lg;
 
-      &__counter {
-        align-items: center;
-        background-color: $color-primary;
-        border-radius: 50%;
-        color: $color-pure-white;
-        display: flex;
-        font-size: $m-sm;
-        font-weight: $weight-semibold;
-        height: $m-xl;
-        justify-content: center;
-        letter-spacing: -0.64px;
-        line-height: $m-base;
-        margin-bottom: $m-sm;
-        width: $m-xl;
-      }
-      &__h3 {
-        @include h3;
-        opacity: 0.8;
-        margin-bottom: $m-sm;
-      }
-      &__body-small {
-        @include body-small;
-        color: $color-secondary;
-        opacity: 0.6;
-      }
+    &__counter {
+      align-items: center;
+      background-color: $color-primary;
+      border-radius: 50%;
+      color: $color-pure-white;
+      display: flex;
+      font-size: $m-sm;
+      font-weight: $weight-semibold;
+      height: $m-xl;
+      justify-content: center;
+      letter-spacing: -0.64px;
+      line-height: $m-base;
+      margin-bottom: $m-sm;
+      width: $m-xl;
+    }
+    &__h3 {
+      @include h3;
+      opacity: 0.8;
+      margin-bottom: $m-sm;
+    }
+    &__body-small {
+      @include body-small;
+      color: $color-secondary;
+      opacity: 0.6;
     }
   }
   @include respond-to("medium") {
@@ -61,15 +61,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    .card {
+      max-width: 45%;
+      margin-bottom: $m-slg;
 
-      &__card {
-        max-width: 45%;
-        margin-bottom: $m-slg;
-
-        &__counter {
-          width: 56px;
-          height: 56px;
-        }
+      &__counter {
+        width: 56px;
+        height: 56px;
       }
     }
   }
@@ -92,17 +91,16 @@
       margin: 0 340px;
       flex-wrap: nowrap;
       gap: $m-slg;
+    }
+    .card {
+      margin-bottom: $m-slg;
+      max-width: 320px;
 
-      &__card {
-        margin-bottom: $m-slg;
-        max-width: 320px;
-
-        &__counter {
-          margin-bottom: $m-base;
-        }
-        &__h3 {
-          margin-bottom: $m-base;
-        }
+      &__counter {
+        margin-bottom: $m-base;
+      }
+      &__h3 {
+        margin-bottom: $m-base;
       }
     }
   }
