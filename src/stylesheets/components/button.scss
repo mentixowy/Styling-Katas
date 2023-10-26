@@ -8,13 +8,35 @@
   font-weight: $weight-semibold;
   padding: $m-sm $m-base $m-sm;
   border-radius: $m-xxs;
+  cursor: pointer;
+  transition: transform 0.3s;
+  min-width: 224px;
 
   &--primary {
     background-color: $color-primary;
     border: 2px solid $color-primary;
   }
+
+  &--primary:hover {
+    background-color: $color-primary-dark;
+    border: 2px solid $color-primary-dark;
+  }
+
   &--secondary {
     background-color: transparent;
     border: 2px solid $color-white;
   }
+
+  &--secondary:hover {
+    background-color: rgba($color-black, 0.6);
+  }
+}
+
+.button:focus-visible {
+  outline: $m-xxxs dashed $color-white;
+  outline-offset: $m-xxs;
+}
+
+.button:active {
+  transform: scale(0.99);
 }

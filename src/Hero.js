@@ -12,6 +12,16 @@ export const Hero = () => {
             Working in GrantNavigator just a few minutes, every few months, will
             provide a lot of benefits.
           </p>
+          <ul className=" hero-section__list">
+            <li>Intuitive dashboards & alerts offering real-time visibility</li>
+            <li>
+              Configurable reports targeting the needs of every stakeholder
+            </li>
+            <li>
+              Centralized document libraries, data repositories & deadline
+              calendars
+            </li>
+          </ul>
           <div className="hero-section__CTA">
             <button className="button button--primary" type="button">
               <svg

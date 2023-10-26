@@ -24,9 +24,59 @@
     color: $color-white;
     margin-bottom: $m-lg;
   }
+
+  &__list {
+    display: none;
+  }
+
   &__CTA {
     display: flex;
     flex-direction: column;
     gap: $m-sm;
+  }
+  @include respond-to("medium") {
+    padding: $m-slg;
+
+    &__body-large {
+      margin-bottom: $m-base;
+    }
+
+    &__list {
+      @include body-small;
+      color: $color-white;
+      display: inline-block;
+      margin-bottom: $m-lg;
+
+      li::before {
+        content: " ";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        position: relative;
+        margin-right: $m-xs;
+        background-color: $color-primary;
+        border-radius: 50%;
+      }
+
+      li {
+        margin-bottom: $m-xs;
+      }
+    }
+
+    &__CTA {
+      flex-direction: row;
+      gap: $m-sm;
+    }
+  }
+  @include respond-to("large") {
+    padding: 120px 340px 120;
+
+    &__text-content {
+      max-width: 720px;
+    }
+
+    &__body-large {
+      margin-bottom: $m-lg;
+    }
   }
 }
