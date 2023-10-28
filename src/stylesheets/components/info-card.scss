@@ -1,6 +1,39 @@
 .info-card {
-  background-color: red;
-  &__header {
-    @include h2();
+  width: 100%;
+  text-align: left;
+  padding-bottom: $m-base;
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  &__text-content {
+    padding: $m-base;
+  }
+
+  &__h3 {
+    @include h3();
+    color: $color-black;
+    margin-bottom: $m-sm;
+  }
+
+  &__description {
+    @include body-small();
+    color: $color-secondary;
+    opacity: 0.6;
+  }
+
+  @include respond-to("medium") {
+    img {
+      border-radius: $m-xxs;
+    }
+    border-radius: $m-xxs;
+    width: 45%;
+    &__text-content {
+      padding: $m-base 0;
+    }
+  }
+  @include respond-to("large") {
   }
 }

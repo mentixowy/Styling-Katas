@@ -35,7 +35,7 @@
   }
   @include respond-to("large") {
     font-size: $f-xxl;
-    line-height: $m-xl;
+    line-height: $m-xlr;
     letter-spacing: -2.88px;
   }
 }
@@ -47,9 +47,9 @@
   line-height: 38px;
 
   @include respond-to("medium") {
-    font-size: $f-slg;
+    font-size: $f-xl;
     letter-spacing: -1.28px;
-    line-height: $m-slg;
+    line-height: $m-xl;
   }
 }
 

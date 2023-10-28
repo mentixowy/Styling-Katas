@@ -1,6 +1,6 @@
 .info-section {
   background-color: $color-pure-white;
-  padding: $m-xxl 0 0;
+  padding: $m-xxl 0 $m-xxl;
   margin: auto;
 
   &__kicker {
@@ -23,5 +23,29 @@
   &__body-base {
     color: $color-black;
     opacity: 0.8;
+  }
+
+  &__article-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  @include respond-to("medium") {
+    &__text-content {
+      margin: $m-xl $m-slg $m-xl;
+    }
+    &__article-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: $m-base;
+      justify-content: space-between;
+      padding: 0 $m-slg;
+    }
+  }
+  @include respond-to("large") {
+    padding: $m-xxl 340px $m-xxxl;
+    text-align: center;
+    &__article-wrapper {
+      flex-wrap: nowrap;
+    }
   }
 }
