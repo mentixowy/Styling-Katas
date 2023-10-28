@@ -30,12 +30,12 @@
   }
 
   @include respond-to("medium") {
-    font-size: $f-xxl;
+    font-size: $f-xlr;
     line-height: $m-xl;
   }
   @include respond-to("large") {
-    font-size: $f-xxxl;
-    line-height: $m-xlr;
+    font-size: $f-xxl;
+    line-height: $m-xl;
     letter-spacing: -2.88px;
   }
 }

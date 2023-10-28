@@ -1,9 +1,10 @@
 .hero-section {
-  background-image: url("../../assets/images/hero_image.webp");
+  background-image: url("../../assets/images/hero_image_resized.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 33%;
   padding: $m-base;
+  color: $color-white;
 
   &__text-content {
     margin: $m-xxl 0;
@@ -12,7 +13,6 @@
   &__kicker {
     @include kicker;
     margin-bottom: $m-sm;
-    color: $color-white;
   }
 
   &__h1 {
@@ -21,7 +21,6 @@
   }
   &__body-large {
     @include body-large;
-    color: $color-white;
     margin-bottom: $m-lg;
   }
 
@@ -29,7 +28,7 @@
     display: none;
   }
 
-  &__CTA {
+  &__cta {
     display: flex;
     flex-direction: column;
     gap: $m-sm;
@@ -44,7 +43,7 @@
     &__list {
       @include body-small;
       color: $color-white;
-      display: inline-block;
+      display: block;
       margin-bottom: $m-lg;
 
       li::before {
@@ -52,7 +51,6 @@
         display: inline-block;
         width: 8px;
         height: 8px;
-        position: relative;
         margin-right: $m-xs;
         background-color: $color-primary;
         border-radius: 50%;
@@ -63,7 +61,7 @@
       }
     }
 
-    &__CTA {
+    &__cta {
       flex-direction: row;
       gap: $m-sm;
     }

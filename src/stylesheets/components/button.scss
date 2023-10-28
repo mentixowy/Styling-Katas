@@ -1,16 +1,15 @@
 .button {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: $m-xs;
+  border-radius: $m-xxs;
   color: $color-pure-white;
+  cursor: pointer;
+  display: flex;
   font-size: $f-base;
   font-weight: $weight-semibold;
+  gap: $m-xs;
+  justify-content: center;
   padding: $m-sm $m-base $m-sm;
-  border-radius: $m-xxs;
-  cursor: pointer;
   transition: transform 0.3s;
-  min-width: 224px;
 
   &--primary {
     background-color: $color-primary;
@@ -38,5 +37,5 @@
 }
 
 .button:active {
-  transform: scale(0.99);
+  transform: scale(0.96);
 }

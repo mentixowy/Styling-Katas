@@ -8,7 +8,7 @@
     margin-bottom: $m-sm;
   }
   &__h2 {
-    @include h2(false);
+    @include h2();
     margin-bottom: $m-lg;
   }
 
