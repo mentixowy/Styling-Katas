@@ -1,12 +1,18 @@
+/* Main */
 @import "./variables.scss";
 @import "../vendor/reset.scss";
 @import "../mixins/breakpoints.scss";
-@import "../components/button.scss";
-
 @import "./typo.scss";
+
+/* Components */
+@import "../components/button.scss";
+@import "../components/info-card.scss";
+
+/* Sections */
 @import "../sections/hero.scss";
 @import "../sections/about.scss";
 @import "../sections/values.scss";
+@import "../sections/info.scss";
 
 * {
   box-sizing: border-box;

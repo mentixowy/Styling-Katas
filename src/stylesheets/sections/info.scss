@@ -1,0 +1,27 @@
+.info-section {
+  background-color: $color-pure-white;
+  padding: $m-xxl 0 0;
+  margin: auto;
+
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+  }
+  &__h2 {
+    @include h2();
+    margin-bottom: $m-lg;
+  }
+
+  &__body-base {
+    @include body-base;
+  }
+
+  &__text-content {
+    margin: 0 $m-base $m-xl;
+  }
+
+  &__body-base {
+    color: $color-black;
+    opacity: 0.8;
+  }
+}

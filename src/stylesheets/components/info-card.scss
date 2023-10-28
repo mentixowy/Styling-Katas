@@ -1,0 +1,6 @@
+.info-card {
+  background-color: red;
+  &__header {
+    @include h2();
+  }
+}
