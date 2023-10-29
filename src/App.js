@@ -3,6 +3,7 @@ import { Hero } from "./Hero";
 import { AboutUs } from "./AbousUs";
 import { OurValues } from "./OurValues";
 import { Info } from "./Info";
+import { Cta } from "./Cta";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AboutUs />
       <OurValues />
       <Info />
+      <Cta />
     </main>
   );
 }

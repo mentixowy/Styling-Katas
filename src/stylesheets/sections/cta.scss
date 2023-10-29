@@ -1,0 +1,67 @@
+.cta-section {
+  background-image: url("../../assets/images/cta-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding: $m-xxl 0 $m-xxl;
+  margin: auto;
+  color: $color-white;
+
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+    color: $color-white;
+  }
+
+  &__h2 {
+    @include h2(true);
+    margin-bottom: $m-lg;
+    color: $color-white;
+    font-weight: $weight-regular;
+    span {
+      color: $color-white;
+      font-weight: $weight-semibold;
+    }
+  }
+  &__body-small {
+    @include body-small();
+  }
+
+  &__text-content {
+    padding: 0 $m-base $m-xl;
+  }
+  &__buttons {
+    margin: 0 $m-base;
+    display: flex;
+    flex-direction: column;
+    gap: $m-sm;
+  }
+  @include respond-to("medium") {
+    &__text-content {
+      padding: $m-lg $m-slg $m-lg;
+    }
+    &__buttons {
+      margin: 0 $m-slg;
+      flex-direction: row;
+      gap: $m-sm;
+    }
+  }
+
+  @include respond-to("large") {
+    padding: $m-xlr 0 $m-xlr;
+    margin: 0 340px 0;
+    border-radius: $m-xs;
+    &__text-content {
+      padding: 0 $m-xxl 0;
+    }
+    &__buttons {
+      margin: 0 $m-xxl;
+    }
+    &__h2 {
+      margin-bottom: $m-base;
+    }
+    &__body-small {
+      margin-bottom: $m-lg;
+    }
+  }
+}

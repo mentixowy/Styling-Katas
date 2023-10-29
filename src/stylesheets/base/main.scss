@@ -13,6 +13,7 @@
 @import "../sections/about.scss";
 @import "../sections/values.scss";
 @import "../sections/info.scss";
+@import "../sections/cta.scss";
 
 * {
   box-sizing: border-box;
@@ -20,5 +21,5 @@
 
 body {
   font-family: $font-main;
-  background-color: $color-black;
+  background-color: $color-pure-white;
 }

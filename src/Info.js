@@ -21,7 +21,8 @@ export const Info = () => {
           {/*This looks too complicated for me and I think this isn't necesarry to learn JavaScript only for this. */}
           <img
             src="https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Alternative text"
+            alt="
+            A man sitting on a bench, engrossed in his laptop, surrounded by a serene environment."
           />
           <div className="info-card__text-content">
             <div className="info-card__h3">Web-based</div>
@@ -40,7 +41,7 @@ export const Info = () => {
           {/*This looks too complicated for me and I think this isn't necesarry to learn JavaScript only for this. */}
           <img
             src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Alternative text"
+            alt="A woman in a white shirt engrossed in using her phone, displaying focus and engagement in her digital activities."
           />
           <div className="info-card__text-content">
             <div className="info-card__h3">Affordable</div>
@@ -58,7 +59,7 @@ export const Info = () => {
           {/*This looks too complicated for me and I think this isn't necesarry to learn JavaScript only for this. */}
           <img
             src="https://images.pexels.com/photos/4386433/pexels-photo-4386433.jpeg"
-            alt="Alternative text"
+            alt="A person holding a wallet filled with money, ready for spending."
           />
           <div className="info-card__text-content">
             <div className="info-card__h3">Grant-focused</div>
@@ -77,7 +78,8 @@ export const Info = () => {
           {/*This looks too complicated for me and I think this isn't necesarry to learn JavaScript only for this. */}
           <img
             src="https://images.pexels.com/photos/2873547/pexels-photo-2873547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Alternative text"
+            alt="
+            A stylish woman in shades and a shirt excitedly points at something. Her confident demeanor adds to the intrigue of the moment."
           />
           <div className="info-card__text-content">
             <div className="info-card__h3">Right for you</div>
