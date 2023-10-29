@@ -35,4 +35,30 @@
     flex-direction: column;
     gap: $m-xs;
   }
+
+  @include respond-to("medium") {
+    &__text-content {
+      margin: $m-xl $m-slg $m-xl;
+    }
+    &__buttons {
+      display: block;
+    }
+    &__accordions-wrapper {
+      margin: $m-xl $m-slg $m-xl;
+      gap: $m-sm;
+    }
+  }
+
+  @include respond-to("large") {
+    padding: $m-xxl 340px $m-xxl;
+    display: flex;
+    justify-content: center;
+    gap: $m-xxl;
+
+    &__text-content,
+    &__accordions-wrapper {
+      flex: 1;
+      margin: 0;
+    }
+  }
 }

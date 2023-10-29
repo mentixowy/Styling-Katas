@@ -42,10 +42,14 @@
     }
   }
   @include respond-to("large") {
+    &__text-content {
+      margin: $m-xl 0 $m-xl;
+    }
     padding: $m-xxl 340px $m-xxxl;
     text-align: center;
     &__article-wrapper {
       flex-wrap: nowrap;
+      padding: 0;
     }
   }
 }
