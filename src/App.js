@@ -1,11 +1,24 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { Hero } from "./Hero";
+import { AboutUs } from "./AbousUs";
+import { OurValues } from "./OurValues";
+import { Info } from "./Info";
+import { Cta } from "./Cta";
+import { Faq } from "./Faq";
+import { Footer } from "./Footer";
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <main className="App">
+      <Hero />
+      <AboutUs />
+      <OurValues />
+      <Info />
+      <Cta />
+      <Faq />
+      <Footer />
+    </main>
   );
 }
+
+export default App;

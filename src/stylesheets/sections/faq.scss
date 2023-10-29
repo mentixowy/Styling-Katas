@@ -1,0 +1,64 @@
+.faq-section {
+  background-color: $color-grey;
+  padding: $m-xxl 0 $m-xxl;
+  margin: auto;
+
+  &__text-content {
+    margin: 0 $m-base $m-xl;
+  }
+
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+  }
+  &__h2 {
+    @include h2(true);
+    margin-bottom: $m-base;
+  }
+
+  &__body-base {
+    @include body-base;
+    color: $color-secondary;
+    opacity: 0.8;
+  }
+
+  &__header {
+    margin-bottom: $m-base;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  &__accordions-wrapper {
+    margin: $m-xl $m-base $m-xl;
+    display: flex;
+    flex-direction: column;
+    gap: $m-xs;
+  }
+
+  @include respond-to("medium") {
+    &__text-content {
+      margin: $m-xl $m-slg $m-xl;
+    }
+    &__buttons {
+      display: block;
+    }
+    &__accordions-wrapper {
+      margin: $m-xl $m-slg $m-xl;
+      gap: $m-sm;
+    }
+  }
+
+  @include respond-to("large") {
+    padding: $m-xxl 340px $m-xxl;
+    display: flex;
+    justify-content: center;
+    gap: $m-xxl;
+
+    &__text-content,
+    &__accordions-wrapper {
+      flex: 1;
+      margin: 0;
+    }
+  }
+}

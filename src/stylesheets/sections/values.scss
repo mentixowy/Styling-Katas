@@ -1,0 +1,107 @@
+.values-section {
+  background-color: $color-grey;
+  padding: $m-xl 0 $m-xxl;
+  margin: auto;
+
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+  }
+
+  &__h2 {
+    @include h2(one-line);
+    margin-bottom: $m-lg;
+  }
+
+  &__text-content {
+    margin: 0 $m-base $m-xl;
+  }
+
+  &__cards-wrapper {
+    margin: 0 $m-base;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: $m-lg;
+
+    &__counter {
+      align-items: center;
+      background-color: $color-primary;
+      border-radius: 50%;
+      color: $color-pure-white;
+      display: flex;
+      font-size: $m-sm;
+      font-weight: $weight-semibold;
+      height: $m-xl;
+      justify-content: center;
+      letter-spacing: -0.64px;
+      line-height: $m-base;
+      margin-bottom: $m-sm;
+      width: $m-xl;
+    }
+    &__h3 {
+      @include h3;
+      opacity: 0.8;
+      margin-bottom: $m-sm;
+    }
+    &__body-small {
+      @include body-small;
+      color: $color-secondary;
+      opacity: 0.6;
+    }
+  }
+  @include respond-to("medium") {
+    &__text-content {
+      margin: 0 $m-slg $m-xl;
+    }
+
+    &__cards-wrapper {
+      margin: 0 $m-slg;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card {
+      max-width: 45%;
+      margin-bottom: $m-slg;
+
+      &__counter {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+  @include respond-to("large") {
+    // This negative margin-top on large is only for hiding colorful padding under iframe object
+    // It's not a magic number, it's half iframe height value (640px)
+    margin-top: -320px;
+
+    &__text-content {
+      // Margin-top is 80(according to design), so it's should be $m-xxl, but to balance negative
+      // margin value (witch is -320px) I need to add this and set to 400px.
+      // This effect exists only on large viewports and It's only for visual appearance purposes
+      margin: 400px 340px $m-xl;
+    }
+    &__h2 {
+      margin-bottom: $m-xxl;
+    }
+
+    &__cards-wrapper {
+      margin: 0 340px;
+      flex-wrap: nowrap;
+      gap: $m-slg;
+    }
+    .card {
+      margin-bottom: $m-slg;
+      max-width: 320px;
+
+      &__counter {
+        margin-bottom: $m-base;
+      }
+      &__h3 {
+        margin-bottom: $m-base;
+      }
+    }
+  }
+}

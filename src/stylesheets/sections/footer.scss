@@ -1,0 +1,161 @@
+.footer-section {
+  background-image: url("../../assets/images/footer-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 33%;
+  padding: $m-xl $m-base;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+
+  &__text-content {
+    order: 1;
+  }
+
+  &__logo {
+    margin-bottom: $m-base;
+  }
+
+  &__informations {
+    @include body-small();
+    color: $color-white;
+    opacity: 0.8;
+    margin-bottom: $m-sm;
+  }
+
+  &__bottom-navigation {
+    order: 2;
+  }
+
+  &__privacy-policy {
+    order: 3;
+  }
+
+  &__logo-icons {
+    display: flex;
+    gap: $m-xs;
+    color: $color-white;
+    opacity: 0.8;
+    margin-bottom: $m-base;
+  }
+
+  &__privacy-policy {
+    margin-top: $m-xl;
+    padding-top: $m-base;
+    border-top: 1px solid rgba($color-grey, 0.2);
+  }
+  &__copyright {
+    @include body-small;
+    opacity: 0.6;
+    margin-bottom: $m-sm;
+  }
+  &__privacy-link {
+    @include body-small;
+    font-weight: $weight-medium;
+  }
+
+  @include respond-to("medium") {
+    padding: $m-xl $m-slg $m-xl;
+
+    &__informations {
+      margin-bottom: $m-sm;
+    }
+
+    &__bottom-navigation {
+      display: flex;
+    }
+
+    &__privacy-policy {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include respond-to("large") {
+    padding: $m-xxxl 340px $m-xxxl;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: $m-xl;
+
+    &__informations {
+      margin-bottom: $m-lg;
+    }
+
+    &__text-content {
+      width: 33.3%;
+    }
+
+    &__bottom-navigation {
+      width: 50%;
+    }
+
+    &__privacy-policy {
+      width: 100%;
+    }
+  }
+}
+
+.company {
+  &__kicker {
+    @include kicker;
+    color: $color-white;
+    margin-bottom: $m-sm;
+  }
+
+  &__links {
+    @include body-small;
+    color: $color-white;
+    display: block;
+    margin-bottom: $m-lg;
+
+    li::before {
+      content: " ";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: $m-xs;
+      background-color: $color-primary;
+      border-radius: 50%;
+    }
+
+    li {
+      margin-bottom: $m-xs;
+    }
+  }
+  @include respond-to("medium") {
+    flex: 1;
+  }
+}
+
+.about-product {
+  &__kicker {
+    @include kicker;
+    color: $color-white;
+    margin-bottom: $m-sm;
+  }
+
+  &__links {
+    @include body-small;
+    color: $color-white;
+    display: block;
+    margin-bottom: $m-lg;
+
+    li::before {
+      content: " ";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: $m-xs;
+      background-color: $color-primary;
+      border-radius: 50%;
+    }
+
+    li {
+      margin-bottom: $m-xs;
+    }
+  }
+  @include respond-to("medium") {
+    flex: 1;
+  }
+}

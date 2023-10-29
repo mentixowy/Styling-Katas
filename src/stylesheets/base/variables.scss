@@ -1,0 +1,49 @@
+/* Brand Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+$font-main: "Inter", sans-serif;
+
+/* Font Weights */
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+
+/* Brand Colors */
+$color-primary: #b31c0f;
+$color-primary-dark: #97180d;
+$color-secondary: #1e2019;
+
+/* Neutral Colors */
+$color-black: #121212;
+$color-pure-white: #ffffff;
+$color-white: #ebebeb;
+$color-grey: #f4f4f4;
+
+/* Margins 8px grid */
+$m-xxxs: 2px;
+$m-xxs: 4px;
+$m-xs: 8px;
+$m-sm: 16px;
+$m-base: 24px;
+$m-lg: 32px;
+$m-slg: 40px;
+$m-xl: 48px;
+$m-xlr: 56px;
+$m-xxl: 80px;
+$m-xxxl: 120px;
+
+/* Font Sizes */
+$f-xs: 12px;
+$f-sm: 14px;
+$f-base: 16px;
+$f-lg: 18px;
+$f-slg: 26px;
+$f-xl: 32px;
+$f-xlr: 40px;
+$f-xxl: 48px;
+$f-xxxl: 56px;
+
+/* Breakpoints */
+$breakpoints: (
+  "medium": 768px,
+  "large": 1440px,
+) !default;

@@ -1,0 +1,28 @@
+/* Main */
+@import "./variables.scss";
+@import "../vendor/reset.scss";
+@import "../mixins/breakpoints.scss";
+@import "./typo.scss";
+
+/* Components */
+@import "../components/button.scss";
+@import "../components/info-card.scss";
+@import "../components/accordion.scss";
+
+/* Sections */
+@import "../sections/hero.scss";
+@import "../sections/about.scss";
+@import "../sections/values.scss";
+@import "../sections/info.scss";
+@import "../sections/cta.scss";
+@import "../sections/faq.scss";
+@import "../sections/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $color-pure-white;
+}

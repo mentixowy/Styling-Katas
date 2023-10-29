@@ -1,0 +1,41 @@
+.button {
+  align-items: center;
+  border-radius: $m-xxs;
+  color: $color-pure-white;
+  cursor: pointer;
+  display: flex;
+  font-size: $f-base;
+  font-weight: $weight-semibold;
+  gap: $m-xs;
+  justify-content: center;
+  padding: $m-sm $m-base $m-sm;
+  transition: transform 0.3s;
+
+  &--primary {
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+  }
+
+  &--primary:hover {
+    background-color: $color-primary-dark;
+    border: 2px solid $color-primary-dark;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    border: 2px solid $color-white;
+  }
+
+  &--secondary:hover {
+    background-color: rgba($color-black, 0.6);
+  }
+}
+
+.button:focus-visible {
+  outline: $m-xxxs dashed $color-white;
+  outline-offset: $m-xxs;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
