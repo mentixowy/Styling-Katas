@@ -13,9 +13,9 @@
     color: $color-white;
   }
 
-  &__h2 {
-    @include h2(true);
-    margin-bottom: $m-lg;
+  &__h3 {
+    @include h3;
+    margin-bottom: $m-base;
     color: $color-white;
     font-weight: $weight-regular;
     span {

@@ -1,0 +1,32 @@
+.faq-section {
+  background-color: $color-grey;
+  padding: $m-xxl 0 $m-xxl;
+  margin: auto;
+
+  &__text-content {
+    margin: 0 $m-base $m-xl;
+  }
+
+  &__kicker {
+    @include kicker;
+    margin-bottom: $m-sm;
+  }
+  &__h2 {
+    @include h2(true);
+    margin-bottom: $m-base;
+  }
+
+  &__body-base {
+    @include body-base;
+    color: $color-secondary;
+    opacity: 0.8;
+  }
+
+  &__header {
+    margin-bottom: $m-base;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}

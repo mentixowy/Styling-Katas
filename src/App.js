@@ -4,6 +4,7 @@ import { AboutUs } from "./AbousUs";
 import { OurValues } from "./OurValues";
 import { Info } from "./Info";
 import { Cta } from "./Cta";
+import { Faq } from "./Faq";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <OurValues />
       <Info />
       <Cta />
+      <Faq />
     </main>
   );
 }

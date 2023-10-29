@@ -4,7 +4,7 @@ export const Cta = () => {
       <header className="cta-section__text-content">
         <div className="cta-section__header">
           <div className="cta-section__kicker">check our offer</div>
-          <h1 className="cta-section__h2">
+          <h1 className="cta-section__h3">
             Dive deeper <span>into GrantNavigator</span>
           </h1>
           <p className="cta-section__body-small">
