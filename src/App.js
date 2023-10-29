@@ -5,6 +5,7 @@ import { OurValues } from "./OurValues";
 import { Info } from "./Info";
 import { Cta } from "./Cta";
 import { Faq } from "./Faq";
+import { Footer } from "./Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Info />
       <Cta />
       <Faq />
+      <Footer />
     </main>
   );
 }
