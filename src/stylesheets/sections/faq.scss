@@ -29,4 +29,10 @@
     display: flex;
     flex-direction: column;
   }
+  &__accordions-wrapper {
+    margin: $m-xl $m-base $m-xl;
+    display: flex;
+    flex-direction: column;
+    gap: $m-xs;
+  }
 }
